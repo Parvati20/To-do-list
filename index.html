@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <div class="img-container">
+            <img class="img" src="logo.jpg" alt="Logo">
+        </div>
+        <div id="toggle">
+            <i class="fa-solid fa-toggle-on"></i>
+        </div>
+        <div class="title-content">
+            <h2>To-Do List</h2>
+        </div>
+    </div>
+    <div class="collects">
+        <div class="timer-container">
+            <div class="timer" id="timer">
+                <h2 id="display">00:00:00 AM</h2>
+                <p id="current-date">Wednesday, 5/01/2024</p>
+            </div>
+
+        </div>
+        <div class="collection">
+            <div class="collection-first">
+                <div class="section">
+                    <span class="increment1">0</span><br>
+                    <span class="label">Total Tasks</span><br>
+                    <span class="description">Number of tasks you have created</span>
+                </div>
+
+                <div class="section">
+                    <span class="increment2">0</span><br>
+                    <span class="label">Remaining To Do</span><br>
+                    <span class="description">Tasks remaining to complete.</span>
+                </div>
+
+                <div class="section">
+                    <span class="increment3">0</span><br>
+                    <span class="label">Completed Tasks</span><br>
+                    <span class="description">Total Number of tasks completed</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="input">
+                    <input type="text" placeholder="Enter your Task" id="inp">
+                    <button onclick="Add()">Add</button>
+                </div>
+                <div class="text"></div>
+            </div>
+        </div>
+        <form class="form" action="">
+            <input type="search" placeholder="Search here .">
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
